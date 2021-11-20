@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Solution2 {
-    //Now checking whetehr a number is prime or not by using a different method. we know that if
+    //Naive solution.
+    //Now checking whether a number is prime or not by using a different method. we know that if
     //the square root of a number is divible by a number greater than 1, then it is not a prime number.
     //this approch reduces the time complexity of our program to a great extent.
     public static void main(String[] args) {
