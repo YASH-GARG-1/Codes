@@ -9,7 +9,7 @@ import java.util.*;
         {
             return 0;
         }
-        return (1+digitcount(n/10));
+        return (1+digitcount(n/10)); //recursive case.
     }
     public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
