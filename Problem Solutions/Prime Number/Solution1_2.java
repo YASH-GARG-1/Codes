@@ -1,5 +1,6 @@
 import java.io.*;
 class Solution1_2{
+    // Same as Solution 1 but by using a different input method.
     // We can check whether a number is prime or not by simply dividing the given number with all the numbers that are less then
     //it, except 1 as every number is divisible by 1.
 
