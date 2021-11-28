@@ -116,7 +116,6 @@ struct ListNode* deleteDuplicates(struct ListNode* head){
 
 int main()
 {
-    int val;
     struct ListNode *l1;
     printf("Creating the list : \n");
     l1 = createList();
