@@ -26,6 +26,7 @@ struct ListNode* createList()
             }
             printf("Enter Data : ");
             scanf("%d",&newnode->val);
+            newnode->next = NULL;
             if(head == NULL)
             {
                 head = temp = newnode;
