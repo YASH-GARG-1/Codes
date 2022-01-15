@@ -32,6 +32,4 @@ public class Main {
         return ansList;
     }
 
-}class Main {
-    
 }
