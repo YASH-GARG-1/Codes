@@ -47,6 +47,12 @@ public class Main {
     }
 
     public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
+        
+        if(sos>tar)
+        {
+            return;
+        }
+        
         if(idx == arr.length)
         {
             if(sos == tar)
