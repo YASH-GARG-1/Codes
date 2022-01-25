@@ -94,7 +94,7 @@
 
 import java.util.*;
 
-public class Main{
+public class ToBeDeleted{
 
     public static void main(String args[])
     {
