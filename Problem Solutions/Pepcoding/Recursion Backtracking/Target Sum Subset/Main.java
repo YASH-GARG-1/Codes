@@ -18,7 +18,9 @@ public class Main {
     // set is the subset
     // sos is sum of subset
     // tar is target
-    public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
+
+    // More Optimized.
+    public static void printTargetSumSubsetsO(int[] arr, int idx, String set, int sos, int tar) {
         if(sos == tar)
         {
             for(int i = idx; i < arr.length; i++)
@@ -44,4 +46,39 @@ public class Main {
         }
     }
 
+    public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
+        if(idx == arr.length)
+        {
+            if(sos == tar)
+            {
+                System.out.println(set+".");
+            }
+        }
+        
+        // pick done.
+        printTargetSumSubsets(arr,idx+1,set+arr[idx]+", ",sos+arr[idx],tar);
+        // pick not done.
+        printTargetSumSubsets(arr,idx+1,set,sos,tar);
+
+    }
+    
+    // Less Optimized
+    public static void printTargetSumSubsetsLO(int[] arr, int idx, String set, int sos, int tar) {
+        if(idx == arr.length)
+        {
+            if(sos != tar)
+            {
+                return;
+            }
+            System.out.println(set+".");
+            return;
+        }
+        for(int i = idx; i < arr.length; i++)
+        {
+            if((arr[i] + sos) <= tar)
+            {
+                printTargetSumSubsets(arr,i+1,set+arr[i]+", ",sos+arr[i],tar);
+            }
+        }
+    }
 }
