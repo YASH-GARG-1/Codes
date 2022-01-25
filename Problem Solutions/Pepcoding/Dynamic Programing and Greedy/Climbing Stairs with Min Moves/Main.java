@@ -25,6 +25,7 @@ public class Main {
         scn.close();
     }
     
+    // Solving the Problem Using Recursion.
     public static int climbStairsMinMoves(int idx, int n, int arr[],int jumps)
     {
         if(idx>n)
@@ -47,6 +48,7 @@ public class Main {
         return min;
     }
 
+    // Solving the Problem Using Memoization
     public static int climbStairsMinMovesM(int idx, int n, int arr[],int jumps,int dp[])
     {
         if(idx == n)
@@ -69,6 +71,7 @@ public class Main {
         return dp[idx] = min;
     }
 
+    // Solving the Problem Using Tabulation Method.
     public static int climbStairsMinMovesT(int idx, int n, int arr[],int jumps,int dp[])
     {
         for(int j = n; j>=0; j--)
@@ -86,7 +89,6 @@ public class Main {
             int min = n+2;
             for(int i = 1;i<=arr[j] && (i+j)<=n; i++)
             {
-                // int ans = climbStairsMinMoves(idx+i,n,arr,jumps+1);
                 int ans = dp[i+j];
                 if(ans == (n+2))
                 {
