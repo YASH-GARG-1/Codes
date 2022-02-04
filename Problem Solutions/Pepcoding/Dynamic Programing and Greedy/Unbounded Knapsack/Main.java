@@ -51,4 +51,30 @@ public class Main {
 	   // }
 	    return dp[n][cap];
 	}
+
+	// Using only 1-D Array. Please cha
+	public static int knapSack(int N, int val[], int wt[], int W)
+    {
+        int dp[] = new int[W+1];
+        Arrays.fill(dp,0);
+        for(int i = 0; i < N; i++)
+        {
+            for(int j = 0; j < W+1; j++)
+            {
+                if(j == 0)
+                {
+                    dp[j] = 0;
+                    continue;
+                }
+                int noCall = dp[j];
+                int yesCall = 0;
+                if((j - wt[i]) >= 0)
+                {
+                    yesCall = val[i] + dp[j - wt[i]];
+                }
+                dp[j] = Math.max(noCall,yesCall);
+            }
+        }
+        return dp[W];
+    }
 }
