@@ -53,13 +53,6 @@ public class Main {
       }
 
       int k = Integer.parseInt(br.readLine());
-      // write your code here
-      
-      PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
-      for(int i = 0; i < k; i++)
-      {
-          pq.add(arr[i]);
-      }
       printEle(k,arr);
     }
     
