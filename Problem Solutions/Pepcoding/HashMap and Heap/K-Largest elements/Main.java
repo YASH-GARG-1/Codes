@@ -1,3 +1,4 @@
+/*
 import java.io.*;
 import java.util.*;
 
@@ -35,8 +36,8 @@ public class Main {
         System.out.println(ele);
     }
 }
+*/
 
-/*
 import java.io.*;
 import java.util.*;
 
@@ -59,11 +60,18 @@ public class Main {
       {
           pq.add(arr[i]);
       }
-      printEle(pq,k,arr);
+      printEle(k,arr);
     }
     
-    public static void printEle(PriorityQueue<Integer> pq, int k,int arr[])
+    public static void printEle(int k,int arr[])
     {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+        
+        for(int i = 0; i < k; i++)
+        {
+            pq.add(arr[i]);
+        }
+        
         for(int i = k; i < arr.length; i++)
         {
             if(pq.peek() < arr[i])
@@ -80,4 +88,3 @@ public class Main {
         }
     }
 }
-*/
