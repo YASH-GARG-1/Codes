@@ -1,0 +1,77 @@
+ /**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    
+    public List<Integer> printKLevelsDown(TreeNode node, int k,TreeNode blocker)
+    {
+      if(node == null || k < 0)
+      {
+          return new ArrayList<>();
+      }
+      if(blocker != null && blocker == node)
+      {
+          return new ArrayList<>();
+      }
+      if(k == 0)
+      {
+          List<Integer> ans = new ArrayList<>();
+          ans.add(node.val);
+          return ans;
+      }
+      List<Integer> leftSide = printKLevelsDown(node.left,k-1,blocker);
+      List<Integer> rightSide = printKLevelsDown(node.right,k-1,blocker);
+      for(Integer ele : rightSide)
+      {
+        leftSide.add(ele);
+      }
+    return leftSide;
+  }
+  
+  public static List<TreeNode> findAncestors(TreeNode node, TreeNode target)
+  {
+      if(node == null)
+      {
+          return new ArrayList<>();
+      }
+      if(node == target)
+      {
+          List<TreeNode> ans = new ArrayList<>();
+          ans.add(node);
+          return ans;
+      }
+      List<TreeNode> leftSide = findAncestors(node.left,target);
+      if(leftSide.size() > 0)
+      {
+          leftSide.add(node);
+          return leftSide;
+      }
+      List<TreeNode> rightSide = findAncestors(node.right,target);
+      if(rightSide.size() > 0)
+      {
+          rightSide.add(node);
+          return rightSide;
+      }
+      return new ArrayList<>();
+  }
+    
+    public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
+        List<TreeNode> nodeList = findAncestors(root,target);
+        List<Integer> finalAns = new ArrayList<>();
+        for(int i = 0; i < nodeList.size() && (k-i) >= 0; i++)
+        {
+            List<Integer> eleArr = printKLevelsDown(nodeList.get(i),k-i, i == 0? null:nodeList.get(i-1));
+            for(Integer ele : eleArr)
+            {
+                finalAns.add(ele);
+            }
+        }
+        return finalAns;
+    }
+}
