@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Yash}{Garg}{}{\contactline{\href{}{G-Noida}}{\href{https://github.com/YASH-GARG-1/}{YASH-GARG-1}}{\href{https://www.linkedin.com/in/yash-garg-597a411a6/}{Yash Garg}}{\href{mailto:yashgarg5000@gmail.com}{yashgarg5000@gmail.com}}{\href{tel:+917983248451}{7983248451}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EDUCATION}
+\runsubsection{GL BAJAJ INSTITUTE OF TECHNOLOGY AND MANAGEMENT}
+\descript{| B.Tech}
+\location{June 2019 – July 2023 | Greater Noida, U.P.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Cumulative SGPA (upto 5 semesters) : 8.4
+\end{tightemize}
+\sectionsep
+
+\runsubsection{RYAN INTERNATIONAL SCHOOL}
+\descript{| SENIOR SECONDARY EDUCATION}
+\location{July 2018 – May 2019 | Greater Noida, U.P.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\vspace*{-3mm}
+\sectionsep
+\item Percentage (Central Board of Secondary Education) : 78
+\end{tightemize}
+\sectionsep
+
+\runsubsection{RYAN INTERNATIONAL SCHOOL}
+\descript{| MATRICULATION EDUCATION}
+\location{July 2016 – May 2017 | Greater Noida, U.P.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\vspace*{-3mm}
+\sectionsep
+\item CGPA (Central Board of Secondary Education) : 9.4
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{LEARNING PROGRAMS}
+
+\runsubsection{GOOGLE CLOUD READY PROGRAM}
+\descript{| VIRTUAL MODE}
+\location{June 2020 - July 2020}
+\begin{tightemize}
+\item Worked on High-Performance Infrastructure for Cloud Computing, Data Analytics, Machine Learning, Google Kubernetes Engine, Cloud Functions, Cloud Storage, etc.
+\item Worked towards Implementation, Deployment, Migrate and Maintain an application in the cloud with a set of instructions to walk you through a live, real-world, and scenario-based use case. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{AWS Learning Program}
+\descript{| Offline Mode}
+\location{March 2022 - April 2022}
+\begin{tightemize}
+\item Learned about the various Resources available on AWS platform for Differnt Use-Cases.
+\item Learned How to upload your data on S3 and process the data uploaded in the S3 bucket using Various services provided by the AWS.
+\item Worked on hosting a Static Website on S3 and also worked on Hosting the Website using EC2 Machine.
+\end{tightemize}
+\sectionsep
+
+% Certifications
+
+\section{CERTIFICATIONS}
+
+\runsubsection{30 DAYS OF GOOGLE CLOUD PROGRAM}
+\begin{tightemize}
+\item Learned How TO use Google CLoud Platform.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{INTRODUCTION TO HTML 5}
+\begin{tightemize}
+\item Gained Basic Knowledge of HTML.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{INTRODUCTION TO CSS 3}
+\begin{tightemize}
+\item Gained Basic Knowledge of CSS. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Successful Negotiation : Essential Strategies and Skills}
+\begin{tightemize}
+\item Specially Done for Negotiating Salary With HR. 
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{Proficient:}
+ C++ \textbullet{} C \textbullet{} Java \textbullet{} CSS \textbullet{} HTML \textbullet{} Data Structures \textbullet{} Problem Solving\\
+\sectionsep
+\sectionsep
+\sectionsep
+\subsection{Tools/Platforms}
+\sectionsep
+Git \textbullet{} Github \textbullet{} Google Cloud \textbullet{} AWS \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{CODING PROFILE} 
+
+\subsection{CODECHEF}
+\descript{3* RATED ON CODECHEF}
+\location{Profile : yash\_garg\_1}
+\sectionsep
+
+\subsection{CODEFORCES}
+\descript{NEWBIE ON CODEFORCES}
+\location{Profile : known\_person}
+\sectionsep
+
+\subsection{PEPCODING}
+\descript{SOLVED 500+ Questions on the Platform}
+\sectionsep
+
+\subsection{LEETCODE}
+\descript{Solved 60+ Questions}
+\location{Profile : unknow\_n}
+\sectionsep
+
+\subsection{HACKERRANK}
+\descript{Profile : Yash\_Garg01}
+\location{C++  : 5 Star Badge}
+\location{C    : 4 Star Badge}
+\location{Java : 3 Star Badge}
+\sectionsep
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SOFT SKILLS} 
+
+\subsection{\textbullet{} PROBLEM SOLVING}
+\sectionsep
+
+\subsection{\textbullet{} TEAM WORK}
+\sectionsep
+
+\subsection{\textbullet{} TIME MANAGEMENT}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
