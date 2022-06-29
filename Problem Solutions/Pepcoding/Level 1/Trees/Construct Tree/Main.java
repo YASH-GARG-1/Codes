@@ -10,6 +10,7 @@ public class Main{
         Pair(Node node)
         {
             this.node = node;
+            this.state = 1;
         }
         Pair(Node node, int state)
         {
