@@ -1,10 +1,10 @@
 import java.util.*;
 
-class Main{
+class MazePath{
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int T = scn.nextInt();
-        for(int i = 0; i < T; i++)
+        for(int l = 0; l < T; l++)
         {
             int N = scn.nextInt();
             char arr[][] = new char[N][N];
