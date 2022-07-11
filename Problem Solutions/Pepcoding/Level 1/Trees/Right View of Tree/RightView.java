@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LevelOrderTraversal{
+public class RightView{
     
     public static class Node
     {
@@ -40,19 +40,19 @@ public class LevelOrderTraversal{
         }
     }
 
-    public static void levelOrderTraversal(Node root)
+    public static void printRightView(Node root)
     {
         Queue<Node> que = new LinkedList<>();
         que.add(root);
-        int lev = 0;
+        ArrayList<Integer> ans = new ArrayList<>();
         while(que.size() > 0)
         {
-            System.out.print("Level " + lev + " : ");
+            ArrayList<Integer> item = new ArrayList<>();
             int len = que.size();
-            while(len > 0)
+            while(len-- > 0)
             {
                 Node node = que.remove();
-                System.out.print(node.data + " ");
+                item.add(node.data);
                 if(node.left != null)
                 {
                     que.add(node.left);
@@ -61,10 +61,14 @@ public class LevelOrderTraversal{
                 {
                     que.add(node.right);
                 }
-                len--;
             }
-            lev++;
-            System.out.print("\n");
+            ans.add(item.get(item.size() - 1));
+        }
+
+        System.out.print("The Right View Of the Tree is : \n");
+        for(int ele : ans)
+        {
+            System.out.print(ele + "\n");
         }
     }
 
@@ -106,7 +110,6 @@ public class LevelOrderTraversal{
             }
         }
         
-        System.out.print("\nLevel Order Traversal is : \n");
-        levelOrderTraversal(root);
+        printRightView(root);
     }
 }

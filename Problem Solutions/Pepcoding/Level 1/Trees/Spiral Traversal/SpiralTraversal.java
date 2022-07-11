@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class LevelOrderTraversal{
+public class SpiralTraversal{
     
     public static class Node
     {
@@ -40,19 +40,38 @@ public class LevelOrderTraversal{
         }
     }
 
-    public static void levelOrderTraversal(Node root)
+    public static void PrintSpiral(ArrayList<Integer> arrLis, int order)
+    {
+        if(order%2 == 0)
+        {
+            for(Integer ele : arrLis)
+            {
+                System.out.print(ele + " ");
+            }
+        }
+        else{
+            for(int i = arrLis.size()-1; i >= 0; i--)
+            {
+                System.out.print(arrLis.get(i) + " ");
+            }
+        }
+    }
+
+    public static void SpiralTraversal(Node root)
     {
         Queue<Node> que = new LinkedList<>();
         que.add(root);
-        int lev = 0;
+        int lev = 0,ord = 0;
         while(que.size() > 0)
         {
             System.out.print("Level " + lev + " : ");
             int len = que.size();
+            ArrayList<Integer> arrLis = new ArrayList<>();
             while(len > 0)
             {
                 Node node = que.remove();
-                System.out.print(node.data + " ");
+                // System.out.print(node.data + " ");
+                arrLis.add(node.data);
                 if(node.left != null)
                 {
                     que.add(node.left);
@@ -63,6 +82,8 @@ public class LevelOrderTraversal{
                 }
                 len--;
             }
+            PrintSpiral(arrLis,ord);
+            ord++;
             lev++;
             System.out.print("\n");
         }
@@ -106,7 +127,7 @@ public class LevelOrderTraversal{
             }
         }
         
-        System.out.print("\nLevel Order Traversal is : \n");
-        levelOrderTraversal(root);
+        System.out.print("\nSpiral Traversal is : \n");
+        SpiralTraversal(root);
     }
 }
