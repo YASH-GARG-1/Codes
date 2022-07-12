@@ -20,7 +20,7 @@ public class FloodFillWithJumps{
     static int dirA[][] = {{-1,-1}, {-1,0}, {-1,1}, {0,1}, {1,1}, {1,0}, {1,-1}, {0,-1}}; 
     static String dirN[] = {"A","B","C","D","E","F","G","H"};
     static int minLen = Integer.MAX_VALUE;
-    // Here minLen is taken t ptimize the code as if we a string length is excedding the 
+    // Here minLen is taken to optimize the code as if we a string length is excedding the 
     // min length that no need to compute the ans for that string and simply stop.
     public static void main(String args[])
     {
