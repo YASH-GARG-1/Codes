@@ -70,6 +70,37 @@ public class leftView{
         {
             System.out.print(ele + "\n");
         }
+
+    // More optimized approach. (Submitted on Geeks for Geeks)
+    //     ArrayList<Integer> leftView(Node root)
+    // {
+    //   // Your code here
+    //   if(root == null)
+    //   {
+    //       return new ArrayList<>();
+    //   }
+    //   ArrayList<Integer> ans = new ArrayList<>();
+    //   Queue<Node> que = new LinkedList<>();
+    //   que.add(root);
+    //   while(que.size() > 0)
+    //   {
+    //       int len = que.size();
+    //       ans.add(que.peek().data);
+    //       while(len-- > 0)
+    //       {
+    //           Node temp = que.remove();
+    //           if(temp.left != null)
+    //           {
+    //               que.add(temp.left);
+    //           }
+    //           if(temp.right != null)
+    //           {
+    //               que.add(temp.right);
+    //           }
+    //       }
+    //   }
+    //   return ans;
+    // }
     }
 
     public static void main(String [] args)
