@@ -82,10 +82,16 @@ public class ReverseLevelOrder {
   public static void levelOrder(Node node) {
     // write your code here
     
-    Stack<Node> st = new Stack<>();
+    // Stack<Node> st = new Stack<>();
     Queue<Node> que = new LinkedList<>();
-    // ArrayDeque<Node> que = new ArrayDeque<>();  
-    
+    // ArrayDeque<Node> que = new ArrayDeque<>();
+    // First approach is to use the stack to store each element individually.
+    // Second better approach is to use a String Stack.
+    // This also reduces the no. of times while loop for the stack
+    // will be executed The time complexity is reduced from 
+    // O(N) to O(log N) where N is the no. of nodes present in the tree.
+    Stack<String> st = new Stack<>();
+    String str = "";
     que.add(node);
     que.add(null);
     
@@ -94,39 +100,52 @@ public class ReverseLevelOrder {
         Node temp = que.remove();
         if(temp == null)
         {
+            st.push(str);
+            str = "";
             if(que.size() > 0)
             {
                 // System.out.print("\n");
-                st.push(null);
+                // st.push(null);
                 que.add(null);
             }
         }
         else
         {
             // System.out.print(temp.data + " ");
-            st.push(temp);
-            if(temp.right != null)
-            {
-                que.add(temp.right);
-            }
+            // st.push(temp);
+            // if(temp.right != null)
+            // {
+            //     que.add(temp.right);
+            // }
+            // if(temp.left != null)
+            // {
+            //     que.add(temp.left);
+            // }
+            str = str + temp.data + " ";
             if(temp.left != null)
             {
                 que.add(temp.left);
+            }
+            if(temp.right != null)
+            {
+                que.add(temp.right);
             }
         }
     }
     
     while(st.size() > 0)
     {
-        Node temp = st.pop();
-        if(temp == null)
-        {
-            System.out.print("\n");
-        }
-        else
-        {
-            System.out.print(temp.data + " ");
-        }
+        // Node temp = st.pop();
+        // if(temp == null)
+        // {
+        //     System.out.print("\n");
+        // }
+        // else
+        // {
+        //     System.out.print(temp.data + " ");
+        // }
+        String temp = st.pop();
+        System.out.println(temp);
     }
   }
 
