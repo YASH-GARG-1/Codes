@@ -104,7 +104,10 @@ public class LevelOrderTraversal2 {
     // }
     
     Queue<Node> que = new LinkedList<>();
-    // ArrayDeque<Node> que = new ArrayDeque<>();  
+    // ArrayDeque<Node> que = new ArrayDeque<>();
+    // can't use ArrayDeue with this method as null is not allowed in 
+    // ArrayDeque because null is used as a special return 
+    // value by various methods to indicated that the deque is empty.
     
     que.add(node);
     que.add(null);
