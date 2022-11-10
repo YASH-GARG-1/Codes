@@ -133,6 +133,7 @@ class Solution
         boolean found = false;
         // List<Node> arr = new ArrayList<>();
         
+        // Applying In Order Morris Traversal to find the answer.
         Node curr = root;
         while(curr != null)
         {
