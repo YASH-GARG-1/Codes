@@ -45,7 +45,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{Yash}{Garg}{}{\contactline{\href{}{G-Noida}}{\href{https://github.com/YASH-GARG-1/}{YASH-GARG-1}}{\href{https://www.linkedin.com/in/yash-garg-597a411a6/}{Yash Garg}}{\href{mailto:yashgarg5000@gmail.com}{yashgarg5000@gmail.com}}{\href{tel:+917983248451}{7983248451}}}
+\namesection{Yash}{Garg}{}{\contactline{G-Noida}{\href{https://github.com/YASH-GARG-1/}{YASH-GARG-1}}{\href{https://www.linkedin.com/in/yash-garg-597a411a6/}{Yash Garg}}{\href{mailto:yashgarg5000@gmail.com}{yashgarg5000@gmail.com}}{\href{tel:+917983248451}{7983248451}}}
 
 % \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
 
@@ -61,6 +61,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{OBJECTIVE}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+
+\item To be A Computer Science Engineer with passion to enhance
+skills
+through \\practice and experience. Proven efficiency with an
+ability
+to quickly learn and \\navigate any computer software program.
+\item Able to effectively self-manage during independent projects, as
+well as collaborate as part of a productive team. A creative
+thinker, adept in software development and working with
+various data structures.  
+\end{tightemize}
+\sectionsep
+
 
 \section{EDUCATION}
 \runsubsection{GL BAJAJ INSTITUTE OF TECHNOLOGY AND MANAGEMENT}
@@ -68,7 +85,7 @@
 \location{June 2019 – July 2023 | Greater Noida, U.P.}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\sectionsep
+% \sectionsep
 \item Cumulative SGPA (upto 5 semesters) : 8.4
 \end{tightemize}
 \sectionsep
@@ -105,7 +122,7 @@
 \descript{| VIRTUAL MODE}
 \location{June 2020 - July 2020}
 \begin{tightemize}
-\item Worked on High-Performance Infrastructure for Cloud Computing, Data Analytics, Machine Learning, Google Kubernetes Engine, Cloud Functions, Cloud Storage, etc.
+\item Worked on High-Performance Infrastructure for Cloud Computing, Data Analytics, Machine Learning, Cloud Functions, Cloud Storage, etc.
 \item Worked towards Implementation, Deployment, Migrate and Maintain an application in the cloud with a set of instructions to walk you through a live, real-world, and scenario-based use case. 
 \end{tightemize}
 \sectionsep
@@ -120,33 +137,56 @@
 \end{tightemize}
 \sectionsep
 
+
+\section{PROJECTS}
+
+\runsubsection{{\href{https://github.com/YASH-GARG-1/ATM-Simulator-System}{ATM SIMULATOR SYSTEM}}}
+% {\href{https://www.linkedin.com/in/yash-garg-597a411a6/}{TIC‑TAC‑TOE GAME}}
+% \descript{ VIRTUAL MODE}
+% \location{June 2022 - August 2022}
+\begin{tightemize}
+\item Created a simple ATM simulator system using JFrame, JDBC.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{{\href{https://github.com/YASH-GARG-1/Tic-Tac-Toe}{TIC‑TAC‑TOE GAME}}}
+% \descript{| Offline Mode}
+% Click to show the PDF
+
+% \location{March 2022 - April 2022}
+\begin{tightemize}
+\item Created tic tac toe game using java.
+\end{tightemize}
+\sectionsep
+
 % Certifications
 
-\section{CERTIFICATIONS}
+% \section{CERTIFICATIONS}
 
-\runsubsection{30 DAYS OF GOOGLE CLOUD PROGRAM}
-\begin{tightemize}
-\item Learned How TO use Google CLoud Platform.
-\end{tightemize}
-\sectionsep
+% \runsubsection{Business Administration Specialist Superbadge (Salesforce)}
+% % \begin{tightemize}
+% % \item Learned how to use salesforce for cre
+% % \end{tightemize}
+% \sectionsep
 
-\runsubsection{INTRODUCTION TO HTML 5}
-\begin{tightemize}
-\item Gained Basic Knowledge of HTML.
-\end{tightemize}
-\sectionsep
+% \runsubsection{30 DAYS OF GOOGLE CLOUD PROGRAM}
+% \begin{tightemize}
+% \item Learned How To use Google CLoud Platform.
+% \end{tightemize}
+% \sectionsep
 
-\runsubsection{INTRODUCTION TO CSS 3}
-\begin{tightemize}
-\item Gained Basic Knowledge of CSS. 
-\end{tightemize}
-\sectionsep
+% \runsubsection{INTRODUCTION TO HTML 5}
+% \begin{tightemize}
+% \item Gained Basic Knowledge of HTML.
+% \end{tightemize}
+% \sectionsep
 
-\runsubsection{Successful Negotiation : Essential Strategies and Skills}
-\begin{tightemize}
-\item Specially Done for Negotiating Salary With HR. 
-\end{tightemize}
-\sectionsep
+% \runsubsection{INTRODUCTION TO CSS 3}
+% \begin{tightemize}
+% \item Gained Basic Knowledge of CSS. 
+% \end{tightemize}
+% \sectionsep
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,7 +217,7 @@
 \subsection{Programming}
 \sectionsep
 \location{Proficient:}
- C++ \textbullet{} C \textbullet{} Java \textbullet{} CSS \textbullet{} HTML \textbullet{} Data Structures \textbullet{} Problem Solving\\
+ C++ \textbullet{} C \textbullet{} Java \textbullet{} CSS \textbullet{} HTML \textbullet{} Data Structures \textbullet{} Problem Solving \textbullet{} SQL\\
 \sectionsep
 \sectionsep
 \sectionsep
@@ -194,44 +234,71 @@ Git \textbullet{} Github \textbullet{} Google Cloud \textbullet{} AWS \\
 \section{CODING PROFILE} 
 
 \subsection{CODECHEF}
-\descript{3* RATED ON CODECHEF}
+% \descript{3* RATED ON CODECHEF}
 \location{Profile : yash\_garg\_1}
 \sectionsep
 
 \subsection{CODEFORCES}
-\descript{NEWBIE ON CODEFORCES}
+% \descript{NEWBIE ON CODEFORCES}
 \location{Profile : known\_person}
 \sectionsep
 
-\subsection{PEPCODING}
-\descript{SOLVED 500+ Questions on the Platform}
-\sectionsep
-
 \subsection{LEETCODE}
-\descript{Solved 60+ Questions}
+% \descript{Solved 60+ Questions}
 \location{Profile : unknow\_n}
 \sectionsep
 
 \subsection{HACKERRANK}
 \descript{Profile : Yash\_Garg01}
-\location{C++  : 5 Star Badge}
-\location{C    : 4 Star Badge}
-\location{Java : 3 Star Badge}
+% \location{C++  : 5 Star Badge}
+% \location{C    : 4 Star Badge}
+% \location{Java : 3 Star Badge}
+\sectionsep
+
+\subsection{PEPCODING}
+\descript{SOLVED 400+ Questions on the Platform}
+\sectionsep
+
+
+\section{CERTIFICATIONS}
+
+\runsubsection{Business Administration Specialist Superbadge (Salesforce)}
+% \begin{tightemize}
+% \item Learned how to use salesforce for cre
+% \end{tightemize}
+\sectionsep
+
+\runsubsection{30 DAYS OF GOOGLE CLOUD PROGRAM}
+% \begin{tightemize}
+% \item Learned How To use Google CLoud Platform.
+% \end{tightemize}
+\sectionsep
+
+\runsubsection{INTRODUCTION TO HTML 5}
+% \begin{tightemize}
+% \item Gained Basic Knowledge of HTML.
+% \end{tightemize}
+\sectionsep
+
+\runsubsection{INTRODUCTION TO CSS 3}
+% \begin{tightemize}
+% \item Gained Basic Knowledge of CSS. 
+% \end{tightemize}
 \sectionsep
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %     REFERENCES
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{SOFT SKILLS} 
+% \section{SOFT SKILLS} 
 
-\subsection{\textbullet{} PROBLEM SOLVING}
-\sectionsep
+% \subsection{\textbullet{} PROBLEM SOLVING}
+% \sectionsep
 
-\subsection{\textbullet{} TEAM WORK}
-\sectionsep
+% \subsection{\textbullet{} TEAM WORK}
+% \sectionsep
 
-\subsection{\textbullet{} TIME MANAGEMENT}
-\sectionsep
+% \subsection{\textbullet{} TIME MANAGEMENT}
+% \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
